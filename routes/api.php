@@ -25,5 +25,6 @@ Route::controller(AuthController::class)->group(function () {
 
     Route::post('login', 'login');
     Route::post('upload_profile_picture', 'uploadProfilePicture');
+    Route::post('register', 'register');
 
 });
