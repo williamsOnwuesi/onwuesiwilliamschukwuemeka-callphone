@@ -23,10 +23,10 @@ email : onwuesiwilliams@gmail.com
 password : onwuesiwilliams 
 
 
-Github Repository : github.com/williamsOnwuesi/onwuesiwilliamschukwuemeka-callphone
+Github Repository : https://github.com/williamsOnwuesi/onwuesiwilliamschukwuemeka-callphone
 
 API Documentation : 
-github.com/williamsOnwuesi/onwuesiwilliamschukwuemeka-callphone/blob/main/README.md
+https://github.com/williamsOnwuesi/onwuesiwilliamschukwuemeka-callphone/blob/main/README.md
 
 
 This message has everything appropriately and correct about the project. Thank you.
