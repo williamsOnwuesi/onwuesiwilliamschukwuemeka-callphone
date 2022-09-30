@@ -19,14 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::post("/login", [AuthController::class, 'login']);
 
-//Route::post("/upload_profile_pic", [AuthController::class, 'uploadProfilePicture']);
-
-Route::controller(AuthController::class)->group(function () {
-
-    Route::post('login', 'login');
-    Route::post('upload_profile_picture', 'uploadProfilePicture');
-    Route::post('register', 'register');
-
-});
