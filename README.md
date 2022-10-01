@@ -9,9 +9,9 @@ The project is found in the master branch of this repository.
 
 Base URL : http://onwuesiwilliams-callphoneapi.herokuapp.com
 
-Endpoints: "/upload_profile_picture", "/login"
+Endpoints: "/api/upload_profile_picture", "/api/login"
 
-It also has a "/register" endpoint. So you can create a new user too.
+It also has a "/api/register" endpoint. So you can create a new user too.
 
 
 Test Credentials : 
