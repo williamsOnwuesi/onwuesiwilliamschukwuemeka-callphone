@@ -19,7 +19,7 @@ class UploadController extends Controller
 
         $image_path = $request->file('image')->store('image', 'public');
 
-        $data = Image::create([
+        $Image_data = Image::create([
             'image' => $image_path,
         ]);
 
