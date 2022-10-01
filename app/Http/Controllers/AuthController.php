@@ -47,35 +47,6 @@ class AuthController extends Controller
     }
 
 
-    public function uploadProfilePicture(Request $request){
-
-        $request->validate([
-            'image' => 'required|image|mimes:jpg,jpeg|max:2048'
-        ]);
-
-        $imageName = time().'.'.$request->image->extension();
-
-        // Public Folder
-        $request->image->move(public_path('images'), $imageName);
-
-        // //Store in Storage Folder
-        // $request->image->storeAs('images', $imageName);
-
-        // // Store in S3
-        // $request->image->storeAs('images', $imageName, 's3');
-
-        //Store IMage in DB 
-
-
-        return response()->json([
-            'status'=>'success',
-            'message'=>'Image uploaded Successfully!',
-            'image'=>$imageName
-        ]);
-
-    }
-
-
     public function register(Request $request){
         
         $request->validate([
@@ -104,27 +75,5 @@ class AuthController extends Controller
 
     }
 
-
-    public function logout()
-    {
-        Auth::logout();
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Successfully logged out',
-        ]);
-    }
-
-
-    public function refresh()
-    {
-        return response()->json([
-            'status' => 'success',
-            'user' => Auth::user(),
-            'authorisation' => [
-                'token' => Auth::refresh(),
-                'type' => 'bearer',
-            ]
-        ]);
-    }
 
 }

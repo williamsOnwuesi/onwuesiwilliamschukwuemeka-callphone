@@ -24,7 +24,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::controller(AuthController::class)->group(function () {
 
     Route::post('login', 'login');
-    Route::post('upload_profile_picture', 'uploadProfilePicture');
     Route::post('register', 'register');
+
+});
+
+Route::controller(UploadController::class)->group(function (){
+
+    Route::post('upload_profile_picture', 'uploadProfilePicture');
 
 });
